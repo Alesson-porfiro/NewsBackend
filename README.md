@@ -17,11 +17,9 @@ A full-stack platform for aggregating, analyzing, and visualizing global news an
   <img width="1338" height="761" alt="531572159-10ea0996-b70b-47db-a87d-93d034118de7" src="https://github.com/user-attachments/assets/7ddee673-a23b-40c5-b5b2-e2e357b8db23" />
   <img width="1331" height="757" alt="Captura de tela 2026-01-02 190913" src="https://github.com/user-attachments/assets/f3162734-9d03-4d67-b12b-daa201678088" />
   <img alt="GeoIntelligence Screenshot" src="https://github.com/user-attachments/assets/69fd2f89-49ba-4889-9c77-784a8fe3fbe4" />
+  <img width="1333" height="761" alt="image" src="https://github.com/user-attachments/assets/4f705ca6-61b7-4158-8ef6-4848cfef3cd2" />
+
 </p>
-
-https://github.com/Alesson-porfiro/NewsBackend/issues/1
-
-https://private-user-images.githubusercontent.com/177404223/531572159-10ea0996-b70b-47db-a87d-93d034118de7.png?
 
 ---
 
