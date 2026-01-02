@@ -12,10 +12,9 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("FrontendPolicy", policy =>
     {
-        policy
-            .WithOrigins("http://localhost:5173")
-            .AllowAnyHeader()
-            .AllowAnyMethod();
+        policy.AllowAnyOrigin()
+      .AllowAnyHeader()
+      .AllowAnyMethod();
     });
 });
 
@@ -37,10 +36,11 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseHttpsRedirection();
 }
 
-// 🔓 ATIVAR CORS (ANTES DAS ROTAS)
 app.UseCors("FrontendPolicy");
+
 
 app.UseHttpsRedirection();
 

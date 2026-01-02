@@ -33,3 +33,4 @@ C:\Users\Alesson\Desktop\GeoIntellige\GeoIntelligence.Api\obj\Debug\net8.0\refin
 C:\Users\Alesson\Desktop\GeoIntellige\GeoIntelligence.Api\obj\Debug\net8.0\GeoIntelligence.Api.pdb
 C:\Users\Alesson\Desktop\GeoIntellige\GeoIntelligence.Api\obj\Debug\net8.0\GeoIntelligence.Api.genruntimeconfig.cache
 C:\Users\Alesson\Desktop\GeoIntellige\GeoIntelligence.Api\obj\Debug\net8.0\ref\GeoIntelligence.Api.dll
+C:\Users\Alesson\Desktop\GeoIntellige\GeoIntelligence.Api\obj\Debug\net8.0\GeoIntelligence.Api.sourcelink.json
