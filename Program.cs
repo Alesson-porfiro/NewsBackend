@@ -4,6 +4,9 @@ using GeoIntelligence.Api.Infrastructure.Integrations;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// =======================
+// SERVICES
+// =======================
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -12,16 +15,16 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("FrontendPolicy", policy =>
     {
-        policy.AllowAnyOrigin()
-      .AllowAnyHeader()
-      .AllowAnyMethod();
+        policy
+            .AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
     });
 });
 
 // News
 builder.Services.AddHttpClient<WorldNewsTubeClient>();
 builder.Services.AddScoped<NewsTubeService>();
-
 
 // Crypto
 builder.Services.AddHttpClient<CryptoClient>();
@@ -32,17 +35,20 @@ var app = builder.Build();
 // =======================
 // MIDDLEWARE
 // =======================
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-    app.UseHttpsRedirection();
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "GeoIntelligence API v1");
+    c.RoutePrefix = "swagger";
+});
 
 app.UseCors("FrontendPolicy");
 
-
-app.UseHttpsRedirection();
+// ⚠️ HTTPS apenas local
+if (app.Environment.IsDevelopment())
+{
+    app.UseHttpsRedirection();
+}
 
 // =======================
 // ROUTES
